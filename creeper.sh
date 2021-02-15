@@ -39,7 +39,7 @@ logtime=$(date +"%FT%H%M%z")
 
 #Create clean log dir
 if [ ! -d "./creeper-logs/" ]; then
-        mkdir -p ./creeper-logs/ || echo -e "\e[38;5;9m\n\nUnable to create log directory here.\n\n\e[0m" 2>&1 & exit 1
+        mkdir -p ./creeper-logs/ || echo -e "\e[38;5;9m\n\nUnable to create log directory here.\n\n\e[0m" 2>&1
 fi
 
 
