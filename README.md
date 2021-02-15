@@ -1,5 +1,5 @@
 ## creeper.sh
-####The Offensive Global Minecraft® Server Scanner
+#### The Offensive Global Minecraft® Server Scanner
 
 # What's it do?
 Uses [masscan](https://github.com/robertdavidgraham/masscan/) to scan the internet for Minecraft® servers,
@@ -23,8 +23,9 @@ The process usually goes like this:
 4. Join the server.
 
 Various reactions ensue, from "Hello?" to...
-###Connection Lost
-####You are banned from this server.
+
+### Connection Lost
+#### You are banned from this server.
 
 # Don't forget!
 If you have the chance, inform the server owners that their home router (if applicable) has its port
