@@ -1,0 +1,5 @@
+#Don't upload local cleaner script
+cleanlogs.sh
+
+#Dont Upload logs directory
+*logs/
