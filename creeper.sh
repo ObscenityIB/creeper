@@ -62,7 +62,7 @@ if [ ! -f "/usr/bin/python3" ]; then
 fi
 
 if ! python3 -c 'import pkgutil; exit(not pkgutil.find_loader("mcstatus"))'; then
-    echo -e "\e[38;5;29m\n\nmcstatus\e[38;5;9m python3 module not found.\nCheck your python scripts are in PATH or install it with \e[38;5;29mpip3 --install mcstatus\e[38;5;9m\n\n\e[0m" 2>&1 | tee -a ./creeper-logs/creeper-logger-$logtime.log
+    echo -e "\e[38;5;29m\n\nmcstatus\e[38;5;9m python3 module not found.\nCheck your python scripts are in PATH or install it with \e[38;5;29mpip3 install mcstatus\e[38;5;9m\n\n\e[0m" 2>&1 | tee -a ./creeper-logs/creeper-logger-$logtime.log
     exit 5
 fi
 
