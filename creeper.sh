@@ -111,6 +111,12 @@ done < /tmp/creeper-grepfile-$logtime
 
 ##Use mcc script
 if [[ $2 = "--mcc" ]]; then
+
+	if [ ! -f "/usr/bin/mono" ]; then
+        echo -e "\e[38;5;29m\n\nmono\e[38;5;9m, for --mcc argument, was not found at \e[38;5;29m/usr/bin/mono\e[38;5;9m\nYou can install it with \e[38;5;29msudo apt install mono-complete\e[38;5;9m\n\n\e[0m" 2>&1 | tee -a ./creeper-logs/creeper-logger-$logtime.log
+        exit 9
+	fi
+
 	echo -e "\e[38;5;11m\nMCC argument specified, attempting to run...\n\e[0m" 2>&1 | tee -a ./creeper-logs/creeper-logger-$logtime.log
 	cd ./console-client
 	read -p "Alt Username: " mccuser
