@@ -1,5 +1,11 @@
 #Don't upload local cleaner script
 cleanlogs.sh
 
-#Dont Upload logs directory
+#Don't upload logs directory
 *logs/
+
+#Don't upload mcc files
+*client/lang/*
+*client/*log*
+*client/*Client.*
+*client/*Cache.*

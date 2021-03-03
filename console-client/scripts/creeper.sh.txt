@@ -1,0 +1,53 @@
+#Default Script for mcc
+#You can always make your own
+
+
+#Wait for lag
+wait 20
+
+#Try to fix floating
+move down
+move down
+
+#Bypass registration
+send /register creepershell creepershell
+wait 20
+send /login creepershell
+
+#Bypass movement check for chat
+move north
+move north
+move north
+move south
+move south
+move south
+move south
+move south
+move south
+move north
+move north
+move north
+move east
+move east
+move east
+move west
+move west
+move west
+move west
+move west
+move west
+move east
+move east
+move east
+
+#Informative chat message
+send /me appeared from the depths of cyberspace
+wait 20
+send Hi, This server was found online through an automated scan.
+wait 20
+send If having your server exposed to the public is news to you
+wait 20
+send you can close the minecraft port on your router, or use a whitelist.
+wait 20
+send For more information, you can find this script on Github under ObscenityIB/creeper
+exit

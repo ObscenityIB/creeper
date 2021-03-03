@@ -11,6 +11,7 @@ Tested with:
 - Kali Linux - Bleeding Edge
 - masscan - robertdavidgraham/masscan@3ad77be62180d846e127787d1f7d62174c3a5970
 - mcstatus - Dinnerbone/mcstatus@fa1770578e96d65a92a5d7daea3fa0485e29be1e
+- mcc - ORelio/Minecraft-Console-Client@771a5b9e08d9292c3a11878c7c4dbb2d7ee4c643
 
 # But why?
 Purely because its easier to shorten the process by making it scripted, then I just cleaned it up for
