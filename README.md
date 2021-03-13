@@ -34,13 +34,21 @@ exposed to the internet, and should either close it, or use a whitelist.
 
 Some people just forget, or don't understand what they are doing. 
 
+# Screenshots
+##### Starting a scan of 1 million AT&T routers (took 3 minutes)
+![csh01](https://user-images.githubusercontent.com/6983255/111035107-f368d400-846c-11eb-8c88-670e83d16077.png)
 
+##### Using `mcstatus` to display information about the servers
+![csh02](https://user-images.githubusercontent.com/6983255/111035136-1bf0ce00-846d-11eb-8d37-93c90eede5bf.png)
 
+##### Using `mcc` to log in to Minecraft® and join the servers
+![csh03](https://user-images.githubusercontent.com/6983255/111035182-55293e00-846d-11eb-86d9-efbfbaed53ae.png)
 
+##### Running the default creeper.sh script with MCC on a server
+![csh04](https://user-images.githubusercontent.com/6983255/111035263-ae916d00-846d-11eb-95e4-d19cedbcce7c.png)
 
-
-
-
+##### Completed scan after `mcstatus` and `mcc` have finished.
+![csh05](https://user-images.githubusercontent.com/6983255/111035361-48f1b080-846e-11eb-9268-2043acfdc7a2.png)
 
 
 
