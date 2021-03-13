@@ -1,6 +1,14 @@
 ## creeper.sh
 #### The Offensive Global Minecraft® Server Scanner
 
+![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FObscenityIB%2Fcreeper&count_bg=%23FF00FF&icon=minetest.svg&icon_color=%2300FF00&title=hits&edge_flat=false)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/ObscenityIB/creeper?color=FF00FF&include_prereleases&logo=minetest&logoColor=00FF00)
+
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ObscenityIB/creeper?color=FF00FF&logo=minetest&logoColor=00FF00)
+![GitHub repo size](https://img.shields.io/github/repo-size/ObscenityIB/creeper?color=FF00FF&logo=minetest&logoColor=00FF00)
+![Lines of code](https://img.shields.io/tokei/lines/github/ObscenityIB/creeper?color=FF00FF&logo=minetest&logoColor=00FF00)
+
+![GitHub](https://img.shields.io/github/license/ObscenityIB/creeper?color=FF00FF&logo=minetest&logoColor=00FF00)
 # What's it do?
 Uses [masscan](https://github.com/robertdavidgraham/masscan/) to scan the internet for Minecraft® servers,
 then uses Dinnerbone's [mcstatus](https://dinnerbone.com/minecraft/tools/status/) to grab the GameSpy3 data,
