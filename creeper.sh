@@ -33,7 +33,7 @@ echo -e "\033[38;5;150m██\033[38;5;65m██\033[38;5;59m██\033[38;5;16m
 echo -e "\033[38;5;151m██\033[38;5;71m██\033[38;5;16m██\033[38;5;16m██\033[38;5;16m██\033[38;5;16m██\033[38;5;71m██\033[38;5;65m██\e[38;5;92m    :!:       :!:  !:!  :!:       :!:       :!:       :!:       :!:  !:!"
 echo -e "\033[38;5;77m██\033[38;5;113m██\033[38;5;22m██\033[38;5;114m██\033[38;5;151m██\033[38;5;22m██\033[38;5;65m██\033[38;5;77m██\e[38;5;92m     ::: :::  ::   :::   :: ::::   :: ::::   ::        :: ::::  ::   :::"
 echo -e "                \e[38;5;92m     :: :: :   :   : :  : :: ::   : :: ::    :        : :: ::    :   : :"
-echo -e "\n                          v1.1.0.1 - Creep Colony - Copyright 2021 Obscenity\e[0m"
+echo -e "\n                          v1.2.0.0 - Dr. Creep - Copyright 2021 Obscenity\e[0m"
 #Set vars
 logtime=$(date +"%FT%H%M%z")
 
@@ -79,7 +79,7 @@ fi
 
 ##Begin scan
 echo -e "\e[38;5;19m\n\nScanning target '$1'\n\n\e[0m" 2>&1 | tee -a ./creeper-logs/creeper-logger-$logtime.log
-sudo masscan -p 25565 --rate 5000 -oG ./creeper-logs/creeper-scan-$logtime.log $1 2>&1 | tee -a ./creeper-logs/creeper-logger-$logtime.log
+sudo masscan --excludefile exclude.conf -p 25565 --rate 5000 -oG ./creeper-logs/creeper-scan-$logtime.log $1 2>&1 | tee -a ./creeper-logs/creeper-logger-$logtime.log
 
 
 #Checkpoint
@@ -127,7 +127,10 @@ if [[ $2 = "--mcc" ]]; then
 			echo -e "\e[38;5;19m\nJoining $mccline...\n\n\e[0m" 2>&1 | tee -a ../creeper-logs/creeper-logger-$logtime.log
 			mono MinecraftClient.exe creeper.sh.ini $mccuser $mccpass $mccline 2>&1 | tee -a ../creeper-logs/creeper-logger-$logtime.log
 			echo -e "\e[38;5;29m\n+============================+\n\e[0m" 2>&1 | tee -a ../creeper-logs/creeper-logger-$logtime.log
+			echo "$mccline" >> ../exclude.conf #add line by line instead of below setting
 		done < /tmp/creeper-grepfile-$logtime
+	#cat /tmp/creeper-grepfile-$logtime >> ../exclude.conf
+	#add after, doesnt have the effect of resuming from a stuck mcc script
 	cd ..
 fi
 

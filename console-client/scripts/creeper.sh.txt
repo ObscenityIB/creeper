@@ -1,6 +1,8 @@
 #Default Script for mcc
 #You can always make your own
 
+#Get players
+list
 
 #Wait for lag
 wait 20
