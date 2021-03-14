@@ -9,6 +9,14 @@
 ![Lines of code](https://img.shields.io/tokei/lines/github/ObscenityIB/creeper?color=FF00FF&logo=minetest&logoColor=00FF00)
 
 ![GitHub](https://img.shields.io/github/license/ObscenityIB/creeper?color=FF00FF&logo=minetest&logoColor=00FF00)
+
+
+## Seen us?
+#### Start a discussion!
+![creeper_dot_sh](https://user-images.githubusercontent.com/6983255/111061985-463c9d00-84fa-11eb-98e1-b175faa6aaef.png)
+![creeper_dot_sh](https://user-images.githubusercontent.com/6983255/111061986-49d02400-84fa-11eb-83cf-7888568c9ef2.png)
+
+
 # What's it do?
 Uses [masscan](https://github.com/robertdavidgraham/masscan/) to scan the internet for Minecraft® servers,
 then uses Dinnerbone's [mcstatus](https://dinnerbone.com/minecraft/tools/status/) to grab the GameSpy3 data,
