@@ -23,11 +23,11 @@ then uses Dinnerbone's [mcstatus](https://dinnerbone.com/minecraft/tools/status/
 cleaning up the process of doing it manually.
 
 Tested with:
-- Ubuntu - 21.04 - Hirsute Hippo
-- Kali Linux - Bleeding Edge
-- masscan - robertdavidgraham/masscan@3ad77be62180d846e127787d1f7d62174c3a5970
-- mcstatus - Dinnerbone/mcstatus@fa1770578e96d65a92a5d7daea3fa0485e29be1e
-- mcc - ORelio/Minecraft-Console-Client@771a5b9e08d9292c3a11878c7c4dbb2d7ee4c643
+- Ubuntu - 21.10 - [Impish Indri](https://cdimage.ubuntu.com/daily-canary/current/)
+- Kali Linux - [Bleeding Edge](https://cdimage.kali.org/kali-images/kali-weekly/)
+- masscan - [robertdavidgraham/masscan@`144c527`](https://github.com/robertdavidgraham/masscan/commit/144c527ed55275ee9fbb80bb14fbb5e3fcff3b7e)
+- mcstatus - [Dinnerbone/mcstatus@`10cea64`](https://github.com/Dinnerbone/mcstatus/commit/10cea643fa3866063c6b5b327fe890213ecee7f2)
+- mcc - [ORelio/Minecraft-Console-Client@`41b0325`](https://github.com/ORelio/Minecraft-Console-Client/commit/41b0325f45b3084ae66ced37e9311927360d6aa8)
 
 # But why?
 Purely because its easier to shorten the process by making it scripted, then I just cleaned it up for
