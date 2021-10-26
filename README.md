@@ -11,6 +11,9 @@
 ![GitHub](https://img.shields.io/github/license/ObscenityIB/creeper?color=FF00FF&logo=minetest&logoColor=00FF00)
 
 
+> :warning: **Please**: Do not repeat the actions of The Fifth Column. If too many people start doing this, who knows what playing minecraft will be like then.
+
+
 ## Seen us?
 #### Start a discussion!
 ![creeper_dot_sh](https://user-images.githubusercontent.com/6983255/111061985-463c9d00-84fa-11eb-98e1-b175faa6aaef.png)
