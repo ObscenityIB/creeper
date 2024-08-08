@@ -7,5 +7,5 @@ cleanlogs.sh
 #Don't upload mcc files
 *client/lang/*
 *client/*log*
-*client/*Client.*
+*client/*Client*
 *client/*Cache.*
