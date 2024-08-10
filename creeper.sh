@@ -5,7 +5,7 @@
 #                                                                                        #
 #        creeper.sh - Offensive Global Minecraft(R) Server Scanner                       #
 #                                                                                        #
-#        Copyright (C) 2021  Obscenity <https://github.com/ObscenityIB/creeper>          #
+#        Copyright (C) 2024  Obscenity <https://github.com/ObscenityIB/creeper>          #
 #                                                                                        #
 #        This program is free software: you can redistribute it and/or modify            #
 #        it under the terms of the GNU Affero General Public License as                  #
@@ -33,7 +33,7 @@ echo -e "\033[38;5;150m██\033[38;5;65m██\033[38;5;59m██\033[38;5;16m
 echo -e "\033[38;5;151m██\033[38;5;71m██\033[38;5;16m██\033[38;5;16m██\033[38;5;16m██\033[38;5;16m██\033[38;5;71m██\033[38;5;65m██\e[38;5;92m    :!:       :!:  !:!  :!:       :!:       :!:       :!:       :!:  !:!"
 echo -e "\033[38;5;77m██\033[38;5;113m██\033[38;5;22m██\033[38;5;114m██\033[38;5;151m██\033[38;5;22m██\033[38;5;65m██\033[38;5;77m██\e[38;5;92m     ::: :::  ::   :::   :: ::::   :: ::::   ::        :: ::::  ::   :::"
 echo -e "                \e[38;5;92m     :: :: :   :   : :  : :: ::   : :: ::    :        : :: ::    :   : :"
-echo -e "\n                          v1.2.0.0 - Dr. Creep - Copyright 2021 Obscenity\e[0m"
+echo -e "\n                          v1.3.0.0 - ProCreepStination - Copyright 2024 Obscenity\e[0m"
 #Set vars
 logtime=$(date +"%FT%H%M%z")
 
@@ -57,12 +57,12 @@ if [ ! -f "/usr/bin/masscan" ]; then
 fi
 
 if [ ! -f "/usr/bin/python3" ]; then
-        echo -e "\e[38;5;29m\n\npython3\e[38;5;9m was not found at \e[38;5;29m/usr/bin/python3\e[38;5;9m\nYou can install it with \e[38;5;29msudo apt install python3 python3-pip -y\e[38;5;9m\n\n\e[0m" 2>&1 | tee -a ./creeper-logs/creeper-logger-$logtime.log
+        echo -e "\e[38;5;29m\n\npython3\e[38;5;9m was not found at \e[38;5;29m/usr/bin/python3\e[38;5;9m\nYou can install it with \e[38;5;29msudo apt install python3 python3-pipx -y/yay -S python python-pipx\e[38;5;9m\n\n\e[0m" 2>&1 | tee -a ./creeper-logs/creeper-logger-$logtime.log
         exit 4
 fi
 
 if ! python3 -c 'import importlib; exit(not importlib.util.find_spec("mcstatus"))'; then
-    echo -e "\e[38;5;29m\n\nmcstatus\e[38;5;9m python3 module not found.\nCheck your python scripts are in PATH or install it with \e[38;5;29mpip3 install mcstatus\e[38;5;9m\n\n\e[0m" 2>&1 | tee -a ./creeper-logs/creeper-logger-$logtime.log
+    echo -e "\e[38;5;29m\n\nmcstatus\e[38;5;9m python3 module not found.\nCheck your python scripts are in PATH or install it with \e[38;5;29mpipx install mcstatus\e[38;5;9m\n\n\e[0m" 2>&1 | tee -a ./creeper-logs/creeper-logger-$logtime.log
     exit 5
 fi
 
@@ -112,20 +112,16 @@ done < /tmp/creeper-grepfile-$logtime
 ##Use mcc script
 if [[ $2 = "--mcc" ]]; then
 
-	if [ ! -f "/usr/bin/mono" ]; then
-        echo -e "\e[38;5;29m\n\nmono\e[38;5;9m, for --mcc argument, was not found at \e[38;5;29m/usr/bin/mono\e[38;5;9m\nYou can install it with \e[38;5;29msudo apt install mono-complete\e[38;5;9m\n\n\e[0m" 2>&1 | tee -a ./creeper-logs/creeper-logger-$logtime.log
-        exit 9
-	fi
-
+        #mono got nerfed
 	echo -e "\e[38;5;11m\nMCC argument specified, attempting to run...\n\e[0m" 2>&1 | tee -a ./creeper-logs/creeper-logger-$logtime.log
 	cd ./console-client
-	read -p "Alt Username: " mccuser
+	read -p "Alt Email: " mccuser
 	read -sp "Alt Password: " mccpass
 
 		while read mccline
 		do
 			echo -e "\e[38;5;19m\nJoining $mccline...\n\n\e[0m" 2>&1 | tee -a ../creeper-logs/creeper-logger-$logtime.log
-			mono MinecraftClient.exe creeper.sh.ini $mccuser $mccpass $mccline 2>&1 | tee -a ../creeper-logs/creeper-logger-$logtime.log
+			./MinecraftClient creeper.sh.ini $mccuser $mccpass $mccline 2>&1 | tee -a ../creeper-logs/creeper-logger-$logtime.log
 			echo -e "\e[38;5;29m\n+============================+\n\e[0m" 2>&1 | tee -a ../creeper-logs/creeper-logger-$logtime.log
 			echo "$mccline" >> ../exclude.conf #add line by line instead of below setting
 		done < /tmp/creeper-grepfile-$logtime

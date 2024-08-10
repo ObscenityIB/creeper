@@ -6,7 +6,7 @@
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ObscenityIB/creeper?color=FF00FF&logo=minetest&logoColor=00FF00)
 ![GitHub repo size](https://img.shields.io/github/repo-size/ObscenityIB/creeper?color=FF00FF&logo=minetest&logoColor=00FF00)
-![Lines of code](https://img.shields.io/tokei/lines/github/ObscenityIB/creeper?color=FF00FF&logo=minetest&logoColor=00FF00)
+![Lines of code](https://img.shields.io/endpoint?url=https://ghloc.vercel.app/api/ObscenityIB/creeper/badge?&color=FF00FF&logo=minetest&logoColor=00FF00)
 
 ![GitHub](https://img.shields.io/github/license/ObscenityIB/creeper?color=FF00FF&logo=minetest&logoColor=00FF00)
 
@@ -22,15 +22,16 @@
 
 # What's it do?
 Uses [masscan](https://github.com/robertdavidgraham/masscan/) to scan the internet for Minecraft® servers,
-then uses Dinnerbone's [mcstatus](https://dinnerbone.com/minecraft/tools/status/) to grab the GameSpy3 data,
+then uses Dinnerbone's [mcstatus](https://github.com/py-mine/mcstatus) to grab the GameSpy4 data,
 cleaning up the process of doing it manually.
 
 Tested with:
-- Ubuntu - 21.10 - [Impish Indri](https://cdimage.ubuntu.com/daily-canary/current/)
+- Arch Linux - 2024.08.01 - [Release](https://archlinux.org/download/)
+- Ubuntu - 24.10 - [Oracular Oriole](https://cdimage.ubuntu.com/daily-live/current/)
 - Kali Linux - [Bleeding Edge](https://cdimage.kali.org/kali-images/kali-weekly/)
-- masscan - [robertdavidgraham/masscan@`144c527`](https://github.com/robertdavidgraham/masscan/commit/144c527ed55275ee9fbb80bb14fbb5e3fcff3b7e)
-- mcstatus - [Dinnerbone/mcstatus@`10cea64`](https://github.com/Dinnerbone/mcstatus/commit/10cea643fa3866063c6b5b327fe890213ecee7f2)
-- mcc - [ORelio/Minecraft-Console-Client@`41b0325`](https://github.com/ORelio/Minecraft-Console-Client/commit/41b0325f45b3084ae66ced37e9311927360d6aa8)
+- masscan - [robertdavidgraham/masscan@`dfd2001`](https://github.com/robertdavidgraham/masscan/commit/dfd20019c2fe06b915165324e808652ccddba723)
+- mcstatus - [py-mine/mcstatus@`338eb93`](https://github.com/py-mine/mcstatus/commit/338eb931bf0650cf58fa67036193dcaa0dc76797)
+- mcc - [MCCTeam/Minecraft-Console-Client@`ca966a4`](https://github.com/MCCTeam/Minecraft-Console-Client/commit/ca966a464c2262a7b51f6395fe901b12b832e7ee)
 
 # But why?
 Purely because its easier to shorten the process by making it scripted, then I just cleaned it up for

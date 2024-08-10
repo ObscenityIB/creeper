@@ -9,3 +9,4 @@ cleanlogs.sh
 *client/*log*
 *client/*Client*
 *client/*Cache.*
+*client/*backup.*

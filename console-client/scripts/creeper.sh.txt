@@ -5,9 +5,12 @@
 list
 
 #Wait for lag
-wait 20
+wait 40
 
 #Try to fix floating
+move gravity on
+move down
+move down
 move down
 move down
 
